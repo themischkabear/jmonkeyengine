@@ -111,6 +111,8 @@ public class DefaultServer implements Server
 
     protected void addStandardServices() {
         log.fine("Adding standard services...");
+
+        // dmb 2024-08-28 do not use ServerSerializerRegistrationsService
         services.addService(new ServerSerializerRegistrationsService());
     }
 
